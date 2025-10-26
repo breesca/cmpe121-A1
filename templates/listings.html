@@ -1,0 +1,7 @@
+<h2>Available Listings</h2>
+<ul>
+  {% for item in listings %}
+    <li><a href="/listing/{{ item.id }}">{{ item.title }}</a> - ${{ item.price }}/night</li>
+  {% endfor %}
+</ul>
+<a href="/">Back Home</a>
